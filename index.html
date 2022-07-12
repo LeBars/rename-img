@@ -5,24 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="image/x-icon" href="./assets/favicon.svg" rel="shortcut icon">
-  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
   <title>Document</title>
 </head>
 <body>
   <div class="wrapper">
     <div class="logo-phoenix"></div>
 
-    <div class="preview">
-      <img class="preview-img" src="">
-    </div>
+    <div class="preview"></div>
     <ul class="list"></ul>
   </div>
 
   <div class="controls">
-    <input id="input" type="file" multiple>
-    <button id="download">Скачать все</button>
+    <div class="controls-inputs">
+      <div class="controls-input">
+        <label for="select-floor" class="form-label">Выбрать этаж</label>
+        <input class="form-control form-control-sm" id="select-floor" type="file">
+      </div>
+      <div class="controls-input">
+        <label for="select-flats" class="form-label">Выберите квартиры</label>
+        <input class="form-control form-control-sm" id="select-flats" type="file" multiple>
+      </div>
+      <div class="controls-input">
+        <label for="start-num" class="form-label">Начало отсчета</label>
+        <input id="start-num" class="form-control form-control-sm" type="text" placeholder="1">
+      </div>
+    </div>
+
+    <button id="download-files" type="button" class="btn btn-primary">Скачать</button>
   </div>
 
-  <script src="script.js"></script>
+  <script src="/js/main.js" type="module"></script>
 </body>
 </html>

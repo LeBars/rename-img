@@ -1,11 +1,33 @@
 # Rename images
-For start:
+Скрипт для переименования планировок
 
-1. Install dependencies:
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone git@github.com:LeBars/rename-img.git
 ```
-npm i
+
+Go to the project directory
+
+```bash
+  cd rename-img
 ```
-2. Run project
+
+Install dependencies
+
+```bash
+  npm install
 ```
-npm start
+
+Start the server
+
+```bash
+  npm run start
 ```
+
+Первоначальное заполнение планировок:
+
+- Заполнить папку img/flats планировками
+- Заполнить папку img/floors этажами

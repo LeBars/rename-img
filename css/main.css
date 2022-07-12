@@ -1,0 +1,31 @@
+@import './list.css';
+@import './floor.css';
+@import './controls.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-phoenix {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-image: url(.././assets/logo-full.svg);
+  background-size: contain;
+  top: 20px;
+  left: 20px;
+}
+
+.wrapper {
+  display: flex;
+  height: calc(100vh - 103px);
+}
+
+.controls,
+.list,
+.preview {
+  background: gainsboro;
+  outline: 1px solid gray;
+}
